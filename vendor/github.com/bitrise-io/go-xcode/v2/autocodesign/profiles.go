@@ -349,7 +349,7 @@ func profileName(profileType appstoreconnect.ProfileType, bundleID string) strin
 		prefix = "Wildcard "
 	}
 
-	return fmt.Sprintf("%sBitrise %s %s - (%s)", prefix, platform, distribution, bundleID)
+	return fmt.Sprintf("%sBitrise (duplicated) %s %s - (%s)", prefix, platform, distribution, bundleID)
 }
 
 func checkProfileEntitlements(client DevPortalClient, prof Profile, appEntitlements Entitlements) error {
